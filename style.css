@@ -141,14 +141,14 @@ align-items: center;
 @media (min-width:320px){
     
 .block{
-    height: 100vh;
     width: 100%;
+    height: 100%;
 }
 .items{
-    height: 100%;
     display: flex;
     flex-direction: column;
-    width:100%; 
+    width:100%;
+    height: 500px; 
 }
 .item{
     height: 200px;
