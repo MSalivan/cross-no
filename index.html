@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <button class="button" id="button-play">Начать игру</button>
+            <section id="symbol-selection">
+                <div class="block">
+                    <h1>Выберите сторону</h1>
+                    <div class="items">
+                        <button id="PlayGame">
+                    <div class="item red" id="symbol-cross">
+                        <h1>Крестик</h1>
+                        <img src="close.png" alt="cross">
+                    </div>
+                </button>
+                    <button id="PlayGame">
+                    <div class="item blue" id="symbol-nought">
+                        <h1>Нолик</h1>
+                        <img src="o.png" alt="O">
+                    </div>
+                </button>
+                    </div>
+                </div>
+            </section>
+            <table class="field" id="field">
+                <tr>
+                    <td data-index="0"></td>
+                    <td data-index="1"></td>
+                    <td data-index="2"></td>
+                </tr>
+                <tr>
+                    <td data-index="3"></td>
+                    <td data-index="4"></td>
+                    <td data-index="5"></td>
+                </tr>
+                <tr>
+                    <td data-index="6"></td>
+                    <td data-index="7"></td>
+                    <td data-index="8"></td>
+                </tr>
+            </table>
+            <button id="button-restart">
+                <img src="refresh.png" alt="restart">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

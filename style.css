@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.game{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 200px;
+    height: 100px;
+    background: none;
+    background-color: #222;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff;
+}    
+.button:hover{
+    transition: 0.5s ease-in-out;
+    opacity: 60%;
+}
+#button-restart{
+    width: 100px;
+    height: 100px;
+    background: none;
+    background-color: #222;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#button-restart:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #555;
+}
+#button-restart img {
+    width: 50px;
+    height: 50px;
+    animation: restart 5.5s ease infinite; 
+}
+
+@keyframes restart {
+    0% {
+        transform: rotate(0deg); 
+    }
+    50% {
+        transform: rotate(-180deg); 
+    }
+    100% {
+        transform: rotate(-360deg); 
+    }
+}
+
+#symbol-selection{
+    display: none;
+}
+.block{
+    width: 600px;
+    height: 500px;
+    background-color: #a5a5a5;  
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    text-align: center;  
+    flex-direction: column;
+}
+.items{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+#PlayGame , .item {
+    border: none;
+    background: none;
+    padding:20px;
+    margin-right: 40px;
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+}
+.item img
+{
+    margin-top: 30px;
+    width: 100%;
+}
+.red, .blue {
+    transition: 0.9s ease;
+    cursor: pointer;
+}
+.red{
+    background-color: rgb(255, 91, 91);
+}
+.blue{
+    background-color: rgb(78, 78, 245);
+}
+.red:hover,
+.blue:hover{
+    background-color: rgba(255, 255, 255, 0.089); 
+    transform: scale(1.07);
+}
+
+.field{
+    width: 300px;
+    display: none;
+}
+.field td {
+	width: 100px;
+	height: 100px;
+	border: 1px solid rgba(0, 0, 0, 0.116);
+	text-align: center;
+	font-weight: bold;
+}
+.symbol {
+    width: 100%; 
+    height: auto; 
+}
+
+@media (min-width:320px){
+    
+.block{
+    height: 100vh;
+    width: 100%;
+}
+.items{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width:100%; 
+}
+.item{
+    height: 300px;
+}
+.item img{
+    width: 60%;
+}
+}
